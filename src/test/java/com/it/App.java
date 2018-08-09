@@ -1,0 +1,17 @@
+package com.it;
+
+import steps.CommonSteps;
+import steps.HomeSteps;
+import steps.LoginSteps;
+
+public class App {
+    public CommonSteps common;
+    public LoginSteps login;
+    public HomeSteps home;
+
+    public App() {
+        common = new CommonSteps();
+        login = new LoginSteps();
+        home = new HomeSteps();
+    }
+}
