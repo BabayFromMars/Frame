@@ -16,7 +16,14 @@ public class HomePage extends BasePage{
     @FindBy(xpath="//ul[@class='sn_menu']/li[1]")
 	private WebElement labelUserEmail;
 
+    @FindBy (xpath = "//li[@class='sn_menu_item ']/a")
+        public WebElement createNewEmailLink;
+
     public String getLabelUserEmail() {
         return labelUserEmail.getText();
     }
-}
+
+  /*  public void writeEmail(){
+        createNewEmailLink.click()*/
+    }
+

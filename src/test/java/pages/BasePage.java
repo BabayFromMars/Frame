@@ -8,7 +8,7 @@ public abstract class BasePage {
     protected static WebDriver driver;
 
     static {
-        System.setProperty("webdriver.chrome.driver", "/home/babay/home/babay/Документы/Frame/myDir/chromedriver");
+        System.setProperty("webdriver.chrome.driver", "myDir/chromedriver.exe");
          driver = new ChromeDriver();
  //       driver.get("http://www.i.ua/");
     }
