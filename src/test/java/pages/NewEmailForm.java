@@ -18,7 +18,7 @@ public class NewEmailForm extends BasePage{
     public WebElement sendButton;
 
     public void writeNewEmail(){
-        inputFieldTo.sendKeys("ittest2@i.ua");
+        inputFieldTo.sendKeys("ittest@i.ua");
         inputFieldEmailSubject.sendKeys("test email");
         inputFieldEmailBody.sendKeys("My first attempt to create own test");
         sendButton.click();

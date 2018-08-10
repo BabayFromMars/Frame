@@ -22,7 +22,14 @@ public class HomePage extends BasePage{
     public String getLabelUserEmail() {
         return labelUserEmail.getText();
     }
+    @FindBy(xpath="//ul[@class='ho_menu ho_menu-account']//span[@class=\"icon-ho ho_settings ho_i_settings\"]")
+    public WebElement iconSettings;
 
+    @FindBy(xpath="//ul[@class='ho_popup_menu']//li[7]/a")
+    public WebElement iconExit;
+
+    @FindBy(xpath="//li[@class='current new']//ins")
+    public WebElement lableEmailCount;
   /*  public void writeEmail(){
         createNewEmailLink.click()*/
     }

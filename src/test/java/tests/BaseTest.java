@@ -11,6 +11,7 @@ import org.testng.annotations.BeforeSuite;
 public class BaseTest {
    protected static App app = new App();
 protected static User validUser = UserFactory.getValidUser();
+    protected static User validUser2 = UserFactory.getValidUser();
     @BeforeSuite
     public void setUp() {
         app.common.open();
@@ -20,4 +21,7 @@ protected static User validUser = UserFactory.getValidUser();
     public void tearDown() {
         app.common.close();
     }
+
+
+
 }
